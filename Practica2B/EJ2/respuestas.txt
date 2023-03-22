@@ -1,0 +1,10 @@
+c) salida: 
+    Miau!
+    Guau!
+    Guauuuuu!
+
+e) la diferencia con la prueba anterior es que en esta se declaran objetos usando upcasting mientras que en el anterior se declaran de forma directa.
+
+puede enviarse a lassie el mensaje "esMasbuenoQue" ya que lassie es un PerroGrande el cual contiene dicho metodo.
+
+h) no es posible instanciar un objeto de la clase animal ya que es una clase abstracta.
