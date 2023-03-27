@@ -6,11 +6,14 @@ public class Main{
         System.out.println("Ingrese un entero para meter en la lista: ");
         int n = in.nextInt();
         while (n!=-1) {
-            lista.agregar(n);   
+            lista.agregarFinal(n);   
             System.out.println("Ingrese un entero para meter en la lista: ");
             n = in.nextInt();
         }
-        in.close();
-        lista.imprimir();
+       in.close(); 
+       lista.imprimir();
     }
 }
+    
+
+
