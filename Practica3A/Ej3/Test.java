@@ -11,13 +11,10 @@ public class Test {
         listaA.agregarFinal(7);
         listaA.agregarFinal(9);
 
-        listaB.agregarFinal(2);
-        listaB.agregarFinal(4);
-        listaB.agregarFinal(6);
-        listaB.agregarFinal(8);
-        listaB.agregarFinal(10);
-        listaB.agregarFinal(44);
-        listaB.agregarFinal(55);
+        listaB.agregarFinal(20);
+        listaB.agregarFinal(40);
+        listaB.agregarFinal(60);
+        listaB.agregarFinal(80);
 
         ListaDeEnterosEnlazada listaC = new ListaDeEnterosEnlazada();
         listaC = listaB.combinarOrdenado(listaA);
