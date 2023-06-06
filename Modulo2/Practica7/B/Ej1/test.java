@@ -1,3 +1,11 @@
+package Modulo2.Practica7.B.Ej1;
+
+import Clases.Grafo.Grafo;
+import Clases.Grafo.GrafoImplListAdy;
+import Clases.Grafo.Vertice;
+import Clases.Grafo.VerticeImplListAdy;
+import Clases.ListaGenerica.ListaGenerica;
+
 public class test {
   public static void main(String args[]) {
     Vertice<String> v1 = new VerticeImplListAdy<String>("boxer");

@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ5;
+
 public abstract class Figura {
     private String color;
     private boolean relleno;

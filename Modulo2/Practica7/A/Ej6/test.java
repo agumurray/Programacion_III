@@ -4,7 +4,6 @@ import Clases.Grafo.Grafo;
 import Clases.Grafo.GrafoImplListAdy;
 import Clases.Grafo.Vertice;
 import Clases.Grafo.VerticeImplListAdy;
-import Clases.Grafo.Arista;
 import Clases.ListaGenerica.ListaGenerica;
 import Clases.ListaGenerica.ListaGenericaEnlazada;
 

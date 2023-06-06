@@ -1,3 +1,10 @@
+package Clases.Grafo.utils;
+
+import Clases.Grafo.Arista;
+import Clases.Grafo.Grafo;
+import Clases.Grafo.Vertice;
+import Clases.ListaGenerica.ListaGenerica;
+
 public class Dijkstra<T> {
     public Costo[] dijkstraSinHeap(Grafo<T> grafo, Vertice<T> v)  {
         Costo[] costos = new Costo[grafo.listaDeVertices().tamanio()];

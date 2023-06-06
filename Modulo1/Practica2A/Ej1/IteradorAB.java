@@ -1,3 +1,5 @@
+package Modulo1.Practica2A.Ej1;
+
 class IteradorAB{
     public static void main(String[] args){
         int a = 10;

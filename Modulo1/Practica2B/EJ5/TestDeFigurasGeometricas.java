@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ5;
+
 public class TestDeFigurasGeometricas {
     public static void main(String[] args) {
         Figura figuras[] = new Figura[3];

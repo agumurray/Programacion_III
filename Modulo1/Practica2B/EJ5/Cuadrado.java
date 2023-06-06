@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ5;
+
 public class Cuadrado extends Rectangulo{
    public Cuadrado() {
 

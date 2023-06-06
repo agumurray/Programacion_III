@@ -1,3 +1,4 @@
+package Clases.Grafo.utils;
 public class Costo implements Comparable<Costo> {
     private int min;
     private int previo;

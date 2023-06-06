@@ -12,7 +12,10 @@ public class TestBalanceo {
             System.out.println("El string no esta balanceado");
     } 
     public static boolean estaBalanceado(String str) {
-        Character aux;
+        Character aux = null;
+        if(aux == null){
+            System.out.println();
+        }
         Pila<Character> pila = new Pila<Character>();
         for (int i = 0; i<str.length(); i++) {
         if ((str.charAt(i) == '{') || (str.charAt(i) == '[') || (str.charAt(i) == '(')) {

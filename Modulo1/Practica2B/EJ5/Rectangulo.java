@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ5;
+
 public class Rectangulo extends Figura {
     private double ancho;
     private double largo;

@@ -1,3 +1,11 @@
+package Modulo2.Practica7.B.Ej1;
+
+import Clases.Grafo.Arista;
+import Clases.Grafo.Grafo;
+import Clases.Grafo.Vertice;
+import Clases.ListaGenerica.ListaGenerica;
+import Clases.ListaGenerica.ListaGenericaEnlazada;
+
 public class OrdenTopologico<T> {
     public ListaGenerica<Vertice<T>> ordenTopologico(Grafo<T> grafo) {
         boolean[] marca = new boolean[grafo.listaDeVertices().tamanio()];

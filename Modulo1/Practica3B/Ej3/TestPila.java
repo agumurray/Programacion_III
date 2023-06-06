@@ -18,6 +18,7 @@ public class TestPila {
      tope = pila.desapilar(); 
      tope = pila.desapilar(); 
 
+     System.out.println(tope);
      System.out.println(pila.getTope());
    } 
 }

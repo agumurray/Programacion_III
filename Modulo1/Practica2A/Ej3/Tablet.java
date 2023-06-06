@@ -1,3 +1,5 @@
+package Modulo1.Practica2A.Ej3;
+
 public class Tablet {
     private String marca;
     private String sistemaOperativo;

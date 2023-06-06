@@ -1,3 +1,11 @@
+package Modulo2.Practica7.B.Ej2;
+import Clases.Grafo.Grafo;
+import Clases.Grafo.GrafoImplListAdy;
+import Clases.Grafo.Vertice;
+import Clases.Grafo.VerticeImplListAdy;
+import Clases.Grafo.utils.Costo;
+import Clases.Grafo.utils.Dijkstra;
+
 public class test {
     public static void main(String[] args) {
         Vertice<String> v1 = new VerticeImplListAdy<String>("Buenos Aires");
@@ -34,5 +42,6 @@ public class test {
         }
 
         System.out.println("\n\n\n\n");
+
     }
 }

@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ3;
+
 public class SwapValores {
     public static void swap1 (int x, int y) {
         if (x < y) {

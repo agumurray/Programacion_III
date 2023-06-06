@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ4;
+
 public class PruebaRetorno{
     public static String procesarArregloString(int[] arreglo) {
        int max = Integer.MIN_VALUE;

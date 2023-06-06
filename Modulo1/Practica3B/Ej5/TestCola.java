@@ -1,3 +1,5 @@
+package Modulo1.Practica3B.Ej5;
+
 import Clases.ListaGenerica.utils.Cola;
 
 public class TestCola {
@@ -14,6 +16,7 @@ public class TestCola {
     aux = cola.desencolar();
     aux = cola.desencolar();
 
+    System.out.println(aux);
     System.out.println(cola.getTope());
    } 
 }

@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ2;
+
 public class Perro extends Animal {
    @Override
    public void saludo() {

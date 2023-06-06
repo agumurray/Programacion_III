@@ -1,3 +1,4 @@
+package Modulo1.Practica2B.EJ1;
 public class DispositivosMoviles {
     public static void main(String[] args) {
         Mobile sm1 = new SmartPhone("Samsung", "Android", "Galaxy S10", 10000, 123456789);

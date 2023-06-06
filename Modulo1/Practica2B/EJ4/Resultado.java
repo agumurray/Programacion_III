@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ4;
+
 public class Resultado {
     private int min;
     private int max;

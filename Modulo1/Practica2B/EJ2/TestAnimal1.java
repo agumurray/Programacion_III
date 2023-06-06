@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ2;
+
 public class TestAnimal1 {
     public static void main(String[] args) {
         Gato gato1 = new Gato(); //instanciacion de objeto
@@ -21,5 +23,6 @@ public class TestAnimal1 {
         perro2.saludo(perroGrande2);
         perroGrande2.saludo(perro2);
         perroGrande2.saludo(perroGrande1);
+        gato2.saludo();
     }
 }

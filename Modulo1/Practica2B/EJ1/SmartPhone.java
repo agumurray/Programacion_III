@@ -1,3 +1,5 @@
+package Modulo1.Practica2B.EJ1;
+
 public class SmartPhone extends Mobile {
    private int numero;   
 

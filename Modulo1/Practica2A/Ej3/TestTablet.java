@@ -1,3 +1,5 @@
+package Modulo1.Practica2A.Ej3;
+
 public class TestTablet {
     public static void main(String[] args) {
         Tablet[] tablets = new Tablet[3];

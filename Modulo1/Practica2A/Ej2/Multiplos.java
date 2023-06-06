@@ -1,3 +1,5 @@
+package Modulo1.Practica2A.Ej2;
+
 class Multiplos {
     public static void main(String[] args) {
         int a=8;

@@ -20,7 +20,7 @@ public class Test {
 
         ListaGenericaEnlazada<Integer> trayectoriasPesadas = new ListaGenericaEnlazada<Integer>();
 
-        trayectoriasPesadas = arbolBinarioB.trayectoriaPesada(arbolBinarioB);
+        trayectoriasPesadas = ArbolBinario.trayectoriaPesada(arbolBinarioB);
 
         System.out.println(trayectoriasPesadas);
     }
