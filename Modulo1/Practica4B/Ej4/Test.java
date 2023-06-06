@@ -1,6 +1,7 @@
 package Modulo1.Practica4B.Ej4;
 
 import Clases.ArbolBinario.ArbolBinario;
+import Clases.ListaGenerica.ListaGenericaEnlazada;
 
 public class Test {
     public static void main(String[] args) {

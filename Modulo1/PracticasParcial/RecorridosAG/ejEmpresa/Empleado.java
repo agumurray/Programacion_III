@@ -1,3 +1,5 @@
+package Modulo1.PracticasParcial.RecorridosAG.ejEmpresa;
+
 public class Empleado {
     private String nombre;
     private int antiguedad;

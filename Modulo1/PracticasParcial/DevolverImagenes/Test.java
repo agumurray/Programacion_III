@@ -1,3 +1,7 @@
+package Modulo1.PracticasParcial.DevolverImagenes;
+
+import Clases.ArbolGeneral.ArbolGeneral;
+
 public class Test {
     public static void main(String[] args){
         ArbolGeneral<Integer> a = new ArbolGeneral<Integer>(1);

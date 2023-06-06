@@ -184,13 +184,114 @@ public class ListaDeEnterosEnlazada extends ListaDeEnteros {
 		return this.tamanio() == 0;
 	}
 
-	
 	public void imprimir() {
-        NodoEntero aux = this.inicio;
-        while (aux != null) {
-            System.out.print(aux.getDato() + "==>");
-            aux = aux.getSiguiente();
-        }
-        System.out.println("null");
-    }
+		NodoEntero aux = this.inicio;
+		while (aux != null) {
+			System.out.print(aux.getDato() + "==>");
+			aux = aux.getSiguiente();
+		}
+		System.out.println("null");
+	}
+
+	public ListaDeEnterosEnlazada combinarOrdenado(ListaDeEnterosEnlazada lista) {
+		ListaDeEnterosEnlazada merge = new ListaDeEnterosEnlazada();
+		merge.comenzar();
+		int tamanio1 = this.tamanio;
+		int tamanio2 = lista.tamanio();
+		int i = 0;
+		int j = 0;
+		while (merge.tamanio < (tamanio1 + tamanio2)) {
+			if ((i <= tamanio1 - 1) && (j <= tamanio2 - 1)) {
+				if (lista.elemento(j) < this.elemento(i)) {
+					merge.agregarFinal(lista.elemento(j));
+					j++;
+				} else {
+					merge.agregarFinal(this.elemento(i));
+					i++;
+				}
+			}
+
+			else {
+				while (lista.elemento(j) != null) {
+					merge.agregarFinal(lista.elemento(j));
+					j++;
+				}
+				while (this.elemento(i) != null) {
+					merge.agregarFinal(this.elemento(i));
+					i++;
+				}
+			}
+		}
+		return merge;
+	}
+
+	public ListaDeEnterosEnlazada mergeSort(ListaDeEnterosEnlazada lista) {
+		if (lista.tamanio() <= 1)
+			return lista;
+
+		ListaDeEnterosEnlazada izq = new ListaDeEnterosEnlazada();
+		ListaDeEnterosEnlazada der = new ListaDeEnterosEnlazada();
+
+		int i = 0;
+		lista.comenzar();
+		while (!lista.fin()) {
+			if ((i < lista.tamanio() / 2)) {
+				izq.agregarFinal(lista.proximo());
+			} else {
+				der.agregarFinal(lista.proximo());
+			}
+			i++;
+		}
+		izq = mergeSort(izq);
+		der = mergeSort(der);
+
+		return merge(izq, der);
+
+	}
+
+	private static ListaDeEnterosEnlazada merge(ListaDeEnterosEnlazada izq, ListaDeEnterosEnlazada der) {
+		der.comenzar();
+		izq.comenzar();
+		ListaDeEnterosEnlazada resultado = new ListaDeEnterosEnlazada();
+		while (!izq.esVacia() && !der.esVacia()) {
+			if (izq.elemento(0) < der.elemento(0)) {
+				resultado.agregarFinal(izq.elemento(0));
+				izq.eliminarEn(0);
+			} else {
+				resultado.agregarFinal(der.elemento(0));
+				der.eliminarEn(0);
+			}
+		}
+		while (!der.esVacia()) {
+			resultado.agregarFinal(der.elemento(0));
+			der.eliminar(der.elemento(0));
+		}
+		while (!izq.esVacia()) {
+			resultado.agregarFinal(izq.elemento(0));
+			izq.eliminar(izq.elemento(0));
+		}
+		return resultado;
+	}
+
+	public ListaDeEnterosEnlazada ordernar() {
+		ListaDeEnterosEnlazada listaOrdenada = new ListaDeEnterosEnlazada();
+		int tamanioListaOriginal = this.tamanio;
+		listaOrdenada.comenzar();
+		int min = Integer.MAX_VALUE;
+		int j;
+		for (j = 0; j < this.tamanio; j++) {
+			if (this.elemento(j) < min)
+				min = this.elemento(j);
+		}
+		listaOrdenada.agregarFinal(min);
+		while (listaOrdenada.tamanio < tamanioListaOriginal) {
+			min = Integer.MAX_VALUE;
+			for (j = 0; j < this.tamanio; j++) {
+				if ((this.elemento(j) < min) && (this.elemento(j) > listaOrdenada.elemento(listaOrdenada.tamanio() - 1)))
+					min = this.elemento(j);
+			}
+			listaOrdenada.agregarFinal(min);
+		}
+		return listaOrdenada;
+	}
 }

@@ -1,3 +1,5 @@
+package Modulo1.Practica5B.Ej3;
+
 import Clases.ArbolGeneral.ArbolGeneral;
 import Clases.ListaGenerica.ListaGenerica;
 import Clases.ListaGenerica.ListaGenericaEnlazada;

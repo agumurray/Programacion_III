@@ -6,8 +6,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import prog3.listagenerica.ListaGenerica;
-import prog3.listagenerica.ListaGenericaEnlazada;
+import Clases.ListaGenerica.ListaGenerica;
+import Clases.ListaGenerica.ListaGenericaEnlazada;
 
 public class ArbolBinarioTest {
 	ArbolBinario<Integer> arbolBinarioA;

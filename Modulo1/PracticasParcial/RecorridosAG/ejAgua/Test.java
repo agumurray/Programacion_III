@@ -1,4 +1,4 @@
-package Modulo1.PracticasParcial.RecorridosAG.ejEmpresa;
+package Modulo1.PracticasParcial.RecorridosAG.ejAgua;
 
 import Clases.ArbolGeneral.ArbolGeneral;
 import Clases.ListaGenerica.ListaGenerica;
