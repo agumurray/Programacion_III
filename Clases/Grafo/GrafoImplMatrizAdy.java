@@ -80,5 +80,9 @@ public class GrafoImplMatrizAdy<T> implements Grafo<T> {
 		return vertices.elemento(posicion);
 	} 
 
+	public void nadA() {
+		System.out.println(maxVertices);
+	}
+
 
 }

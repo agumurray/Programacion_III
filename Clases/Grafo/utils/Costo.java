@@ -25,7 +25,7 @@ public class Costo implements Comparable<Costo> {
     }
 
     public String toString() {
-        return ("Costo minimo: " + min + "\nVertice previo: " + previo);
+        return ("Costo minimo: " + min + "\nVertice previo: " + (previo+1));
     }
 
     public int compareTo(Costo otro) {

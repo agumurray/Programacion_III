@@ -43,5 +43,10 @@ public class test {
 
         System.out.println("\n\n\n\n");
 
+        Costo[] costos2 = D.dijkstraConHeap(ciudades, v1);
+        for (int i = 0; i < costos2.length; i++) {
+            System.out.println("Vertice " + (i+1) + ":\n" + costos2[i].toString() + "\n");
+        }
+
     }
 }
